@@ -52,7 +52,7 @@
             }
             
             try {
-                const response = await fetch(`https://api.openweathermap.org/data/2.8/onecall?lat=${lat}&lon=${long}&appid=125368aa4b1e415054613740e702ad64`);
+                const response = await fetch(`https://api.openweathermap.org/data/2.8/onecall?lat=${lat}&lon=${long}&appid=${api_id}`);
                 if (!response.ok) {
                     console.log("error");
                 } else {
