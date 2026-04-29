@@ -6,7 +6,7 @@ class Base(DeclarativeBase):
 
 engine = create_engine("//sqlite:///movies.db", echo=True, connect_args={"check_same_thread": False})
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
-#??
+
 
 def get_db():
     session = SessionLocal()
